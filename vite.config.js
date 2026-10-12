@@ -15,6 +15,8 @@ function contentMeta() {
   }
 }
 
+// GitHub Pages serves the site from /<repo-name>/; the deploy workflow sets BASE_PATH.
 export default defineConfig({
+  base: process.env.BASE_PATH || '/',
   plugins: [react(), tailwindcss(), contentMeta()],
 })
