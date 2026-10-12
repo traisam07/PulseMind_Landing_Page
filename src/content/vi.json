@@ -1,0 +1,499 @@
+{
+  "meta": {
+    "lang": "vi",
+    "title": "[VI] PulseMind — ICU breathing-risk prototype",
+    "description": "[VI] A student research prototype that brings ICU readings for patients on ventilators into one view, ranked by estimated breathing risk."
+  },
+  "links": {
+    "demo": "[DEMO URL]",
+    "facebook": "[FACEBOOK URL]",
+    "instagram": "[INSTAGRAM URL]",
+    "email": "khanh.nguyenl3ph@hcmut.edu.vn",
+    "domain": "[DOMAIN]"
+  },
+  "ui": {
+    "skipLink": "[VI] Skip to content",
+    "homeLink": "[VI] PulseMind home",
+    "mainNav": "[VI] Main",
+    "menuOpen": "[VI] Open menu",
+    "menuClose": "[VI] Close menu",
+    "languageLabel": "[VI] Language",
+    "newTab": "[VI] (opens in a new tab)",
+    "chartColLabel": "[VI] Information source",
+    "chartColCount": "[VI] Respondents",
+    "chartColShare": "[VI] Share",
+    "timelineLabel": "[VI] Project timeline"
+  },
+  "header": {
+    "wordmark": {
+      "src": "/assets/wordmark-dark.svg",
+      "alt": "[VI] PulseMind",
+      "label": "[VI] [WORDMARK]"
+    },
+    "menu": [
+      {
+        "label": "[VI] Problem",
+        "href": "#problem"
+      },
+      {
+        "label": "[VI] Approach",
+        "href": "#approach"
+      },
+      {
+        "label": "[VI] Demo",
+        "href": "#demo"
+      },
+      {
+        "label": "[VI] Progress",
+        "href": "#progress"
+      },
+      {
+        "label": "[VI] Team",
+        "href": "#team"
+      },
+      {
+        "label": "[VI] Get involved",
+        "href": "#contact"
+      }
+    ],
+    "cta": "[VI] Explore the demo",
+    "languages": [
+      {
+        "code": "en",
+        "label": "[VI] EN"
+      },
+      {
+        "code": "vi",
+        "label": "[VI] VI"
+      }
+    ]
+  },
+  "home": {
+    "eyebrow": "[VI] DECISION SUPPORT SOFTWARE FOR INTENSIVE CARE",
+    "headline": "[VI] Which patient needs you first?",
+    "subline": "[VI] A clearer view of breathing risk across patients on ventilators.",
+    "status": "[VI] Student research prototype · Sample data · Not in clinical use",
+    "primary": "[VI] Explore the demo",
+    "secondary": {
+      "label": "[VI] Get involved",
+      "href": "#contact"
+    },
+    "image": {
+      "src": "/assets/lungs.png",
+      "alt": "[VI] Illustration of human lungs",
+      "label": "[VI] [LUNGS ILLUSTRATION]"
+    }
+  },
+  "problem": {
+    "eyebrow": "[VI] THE PROBLEM",
+    "title": "[VI] Patient information is spread across several screens.",
+    "body": "[VI] In a busy intensive care unit (ICU), checking on a patient on a ventilator — a machine that helps them breathe — can mean looking at several separate screens and records. That makes a slow decline in breathing harder to notice.",
+    "heroNumber": "[VI] 4.25 of 6",
+    "heroLabel": "[VI] types of information source each clinician uses, on average, to review a patient's breathing",
+    "chartTitle": "[VI] Where clinicians look",
+    "bars": [
+      {
+        "label": "[VI] Ventilator screen and alarms",
+        "count": "[VI] 36 of 36",
+        "share": "[VI] 100%",
+        "value": 100
+      },
+      {
+        "label": "[VI] Examining the patient",
+        "count": "[VI] 35 of 36",
+        "share": "[VI] 97%",
+        "value": 97
+      },
+      {
+        "label": "[VI] Bedside monitor",
+        "count": "[VI] 33 of 36",
+        "share": "[VI] 92%",
+        "value": 92
+      },
+      {
+        "label": "[VI] Blood gas and lab results (blood tests)",
+        "count": "[VI] 21 of 36",
+        "share": "[VI] 58%",
+        "value": 58
+      },
+      {
+        "label": "[VI] Patient record and charts",
+        "count": "[VI] 17 of 36",
+        "share": "[VI] 47%",
+        "value": 47
+      },
+      {
+        "label": "[VI] Handover from colleagues",
+        "count": "[VI] 11 of 36",
+        "share": "[VI] 31%",
+        "value": 31
+      }
+    ],
+    "closing": "[VI] The data already exists — it's just scattered.",
+    "source": "[VI] Survey of 36 ICU clinicians (22 nurses, 14 doctors) at Nhân dân 115 and Nam Sài Gòn hospitals, [MONTH YEAR]. More than one answer allowed. An early local picture, not a national one."
+  },
+  "approach": {
+    "eyebrow": "[VI] OUR APPROACH",
+    "title": "[VI] One clear picture, ranked by who may need review first.",
+    "leadIn": "[VI] A read-only view that turns scattered bedside data into one clear picture of breathing risk — to help clinicians decide which patient to review first.",
+    "audience": "[VI] Built for ICU doctors and nurses caring for adults on ventilators.",
+    "diagram": {
+      "sources": [
+        {
+          "label": "[VI] Ventilator",
+          "icon": {
+            "src": "/assets/icons/ventilator.svg",
+            "alt": "",
+            "label": "[ICON]"
+          }
+        },
+        {
+          "label": "[VI] Bedside monitor",
+          "icon": {
+            "src": "/assets/icons/bedside-monitor.svg",
+            "alt": "",
+            "label": "[ICON]"
+          }
+        },
+        {
+          "label": "[VI] Lab and blood-gas results",
+          "icon": {
+            "src": "/assets/icons/lab-results.svg",
+            "alt": "",
+            "label": "[ICON]"
+          }
+        },
+        {
+          "label": "[VI] Clinical record",
+          "icon": {
+            "src": "/assets/icons/clinical-record.svg",
+            "alt": "",
+            "label": "[ICON]"
+          }
+        }
+      ],
+      "target": {
+        "src": "/assets/brandmark.svg",
+        "alt": "[VI] PulseMind",
+        "label": "[VI] [BRANDMARK]"
+      },
+      "caption": "[VI] How PulseMind is designed to connect"
+    },
+    "steps": [
+      {
+        "title": "[VI] Brings the data together.",
+        "text": "[VI] Collects each patient's readings from different sources in one place."
+      },
+      {
+        "title": "[VI] Estimates who may be at risk — and shows why.",
+        "text": "[VI] Estimates how likely a breathing problem is soon, and shows the readings behind it in plain language."
+      },
+      {
+        "title": "[VI] Highlights who may need review.",
+        "text": "[VI] Flags a patient when risk gets high enough — not an alert on everything."
+      }
+    ],
+    "honesty": "[VI] Every estimate also says how complete and how recent its data is. When the data is too thin, PulseMind says so instead of showing a number.",
+    "readOnly": "[VI] PulseMind only points and explains. It never diagnoses, treats or touches a device. Every decision stays with the clinician.",
+    "closing": "[VI] 28 of the 36 clinicians we surveyed said a tool like this would be useful — if it is proven safe and fits how they work."
+  },
+  "demo": {
+    "eyebrow": "[VI] PROTOTYPE DEMO",
+    "title": "[VI] See the prototype for yourself.",
+    "intro": "[VI] The demo runs on simulated patients, so you can click through it freely. It shows three screens: the whole unit at a glance, one patient in detail, and the history of a single reading.",
+    "screens": [
+      {
+        "title": "[VI] Patient overview",
+        "text": "[VI] every ventilated patient on one list, with those not yet reviewed and at higher estimated risk at the top.",
+        "image": {
+          "src": "/assets/screenshots/overview.png",
+          "alt": "[VI] Patient overview — every ventilated patient on one list, with those not yet reviewed and at higher estimated risk at the top.",
+          "label": "[VI] [SCREENSHOT — Overview]"
+        }
+      },
+      {
+        "title": "[VI] Patient detail",
+        "text": "[VI] the current risk estimate, the readings that contributed most, and a short written explanation.",
+        "image": {
+          "src": "/assets/screenshots/patient-detail.png",
+          "alt": "[VI] Patient detail — the current risk estimate, the readings that contributed most, and a short written explanation.",
+          "label": "[VI] [SCREENSHOT — Patient Detail]"
+        }
+      },
+      {
+        "title": "[VI] Parameter detail",
+        "text": "[VI] one reading over time, with each value marked as measured, carried forward, or filled in from a reference.",
+        "image": {
+          "src": "/assets/screenshots/parameter-detail.png",
+          "alt": "[VI] Parameter detail — one reading over time, with each value marked as measured, carried forward, or filled in from a reference.",
+          "label": "[VI] [SCREENSHOT — Parameter Detail]"
+        }
+      }
+    ],
+    "hint": "[VI] Try this: open the patient at the top of the list, then open one of their readings.",
+    "warning": "[VI] All patients and values in the demo are simulated. Risk levels show how the interface behaves; they are not clinically validated.",
+    "button": "[VI] Open the demo",
+    "deviceNote": "[VI] Works best on a laptop or desktop screen.",
+    "showDeviceNote": true
+  },
+  "progress": {
+    "eyebrow": "[VI] PROGRESS",
+    "title": "[VI] A working prototype — and an honest next step.",
+    "anchor": "[VI] PulseMind is a working prototype, not a finished product. Here's what we've done and what comes next.",
+    "done": [
+      {
+        "date": "[VI] [DATE]",
+        "title": "[VI] Clinician survey · Nhân dân 115 Hospital",
+        "text": "[VI] 22 ICU doctors and nurses told us how they review patients on ventilators.",
+        "photo": {
+          "src": "",
+          "alt": "",
+          "label": "[VI] [PHOTO — optional]"
+        }
+      },
+      {
+        "date": "[VI] [DATE]",
+        "title": "[VI] Prototype built",
+        "text": "[VI] Built on public ICU data from over 36,000 patients, to show how the idea could work.",
+        "photo": {
+          "src": "/assets/photos/team-working.jpg",
+          "alt": "",
+          "label": "[VI] [TEAM WORKING PHOTO]"
+        }
+      },
+      {
+        "date": "[VI] [DATE]",
+        "title": "[VI] BK Innovation 2026",
+        "text": "[VI] [RESULT, e.g. finalist]",
+        "photo": {
+          "src": "/assets/photos/bk-innovation.jpg",
+          "alt": "",
+          "label": "[VI] [COMPETITION PHOTO]"
+        }
+      },
+      {
+        "date": "[VI] [DATE]",
+        "title": "[VI] Second survey · Nam Sài Gòn Hospital",
+        "text": "[VI] A second ICU team shared their workflow, taking the total to 36 clinicians.",
+        "photo": {
+          "src": "",
+          "alt": "",
+          "label": "[VI] [PHOTO — optional]"
+        }
+      },
+      {
+        "date": "[VI] [DATE]",
+        "title": "[VI] VNU RND to Startup 2026",
+        "text": "[VI] [STATUS / RESULT]",
+        "photo": {
+          "src": "/assets/photos/vnu-rnd.jpg",
+          "alt": "",
+          "label": "[VI] [COMPETITION PHOTO]"
+        }
+      }
+    ],
+    "now": {
+      "stage": "[VI] Now",
+      "title": "[VI] Prototype",
+      "text": "[VI] Built on public ICU data. Shows how the concept could work; it is not yet clinically validated."
+    },
+    "ahead": [
+      {
+        "stage": "[VI] Next",
+        "title": "[VI] Agree and test",
+        "text": "[VI] Decide with doctors what PulseMind predicts and how far ahead, then test it on past hospital data."
+      },
+      {
+        "stage": "[VI] Then",
+        "title": "[VI] Connect",
+        "text": "[VI] Connect to real ICU equipment and collect approved data from a Vietnamese hospital."
+      },
+      {
+        "stage": "[VI] Later",
+        "title": "[VI] Trial safely",
+        "text": "[VI] Test PulseMind alongside normal care without affecting clinical decisions, to check it is accurate and safe — then begin a supervised, read-only trial."
+      }
+    ],
+    "closing": "[VI] Read-only at every step — clinicians stay in charge.",
+    "notProven": {
+      "title": "[VI] What we have not proven",
+      "text": "[VI] That PulseMind improves care, saves time, or notices a patient's decline earlier. Those are exactly the questions the next stages exist to answer."
+    }
+  },
+  "team": {
+    "eyebrow": "[VI] OUR TEAM",
+    "title": "[VI] Six students, one question.",
+    "intro": "[VI] We are a student team from Ho Chi Minh City University of Technology (HCMUT — Bách Khoa), working across data, software, design and business.",
+    "groupPhoto": {
+      "src": "/assets/photos/team-group.jpg",
+      "alt": "[VI] The PulseMind team",
+      "label": "[VI] [TEAM GROUP PHOTO]"
+    },
+    "members": [
+      {
+        "name": "[VI] Nguyễn Lê Phương Khánh",
+        "role": "[VI] Team lead",
+        "line": "[VI] [ONE LINE]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] Nguyễn Lê Phương Khánh",
+          "label": "[VI] [HEADSHOT — Nguyễn Lê Phương Khánh]"
+        }
+      },
+      {
+        "name": "[VI] Phạm Quang Luân",
+        "role": "[VI] Model and backend",
+        "line": "[VI] [ONE LINE]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] Phạm Quang Luân",
+          "label": "[VI] [HEADSHOT — Phạm Quang Luân]"
+        }
+      },
+      {
+        "name": "[VI] Nguyễn Phương Trai",
+        "role": "[VI] Interface and business",
+        "line": "[VI] [ONE LINE]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] Nguyễn Phương Trai",
+          "label": "[VI] [HEADSHOT — Nguyễn Phương Trai]"
+        }
+      },
+      {
+        "name": "[VI] Yoshio Nomura",
+        "role": "[VI] Model development",
+        "line": "[VI] [ONE LINE]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] Yoshio Nomura",
+          "label": "[VI] [HEADSHOT — Yoshio Nomura]"
+        }
+      },
+      {
+        "name": "[VI] Lê Việt Hải",
+        "role": "[VI] Design and outreach",
+        "line": "[VI] [ONE LINE]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] Lê Việt Hải",
+          "label": "[VI] [HEADSHOT — Lê Việt Hải]"
+        }
+      },
+      {
+        "name": "[VI] Phạm Hoàng Bảo",
+        "role": "[VI] Market and design",
+        "line": "[VI] [ONE LINE]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] Phạm Hoàng Bảo",
+          "label": "[VI] [HEADSHOT — Phạm Hoàng Bảo]"
+        }
+      }
+    ],
+    "advisers": [
+      {
+        "name": "[VI] Dr Tobias Cibis",
+        "affiliation": "[VI] University of Technology Sydney"
+      },
+      {
+        "name": "[VI] Dr Bosco Tran",
+        "affiliation": "[VI] Healthcare data"
+      },
+      {
+        "name": "[VI] Henry",
+        "affiliation": "[VI] Model development, interface"
+      }
+    ],
+    "clinicalInput": "[VI] With clinical input from Dr Mai Hữu Xuân and Dr Tuấn — guidance, not hospital approval.",
+    "strip": [
+      {
+        "caption": "[VI] [EVENT + MONTH]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] [EVENT + MONTH]",
+          "label": "[VI] [PHOTO — team working or competition]"
+        }
+      },
+      {
+        "caption": "[VI] [EVENT + MONTH]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] [EVENT + MONTH]",
+          "label": "[VI] [PHOTO — team working or competition]"
+        }
+      },
+      {
+        "caption": "[VI] [EVENT + MONTH]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] [EVENT + MONTH]",
+          "label": "[VI] [PHOTO — team working or competition]"
+        }
+      },
+      {
+        "caption": "[VI] [EVENT + MONTH]",
+        "photo": {
+          "src": "",
+          "alt": "[VI] [EVENT + MONTH]",
+          "label": "[VI] [PHOTO — team working or competition]"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "[VI] GET INVOLVED",
+    "title": "[VI] Help us test the idea properly.",
+    "intro": "[VI] PulseMind only becomes useful if it is shaped with the people who would use it. Here is where you can help.",
+    "cards": [
+      {
+        "title": "[VI] Hospitals",
+        "body": "[VI] We are looking for an intensive-care partner: a hospital with an adult ICU, patients on ventilators, and records we may study — so we can agree what to predict and test PulseMind against what actually happened.",
+        "button": "[VI] Talk about a partnership",
+        "subject": "[Partnership] PulseMind"
+      },
+      {
+        "title": "[VI] ICU doctors and nurses",
+        "body": "[VI] Try the demo and tell us what is missing, confusing or wrong. Clinician feedback has shaped every version so far.",
+        "button": "[VI] Send feedback",
+        "subject": "[Feedback] PulseMind demo"
+      },
+      {
+        "title": "[VI] Researchers and mentors",
+        "body": "[VI] We have open questions on labels, validation and prediction timing, and welcome advice from people who have done this before.",
+        "button": "[VI] Offer advice",
+        "subject": "[Research] PulseMind"
+      },
+      {
+        "title": "[VI] Technical partners and students",
+        "body": "[VI] Interested in clinical data, software or design? We'd like to hear what you could bring.",
+        "button": "[VI] Get in touch",
+        "subject": "[Collaborate] PulseMind"
+      }
+    ]
+  },
+  "footer": {
+    "wordmark": {
+      "src": "/assets/wordmark-light.svg",
+      "alt": "[VI] PulseMind",
+      "label": "[VI] [WORDMARK — light]"
+    },
+    "shortLine": "[VI] A student research prototype for intensive care.",
+    "social": [
+      {
+        "label": "[VI] Facebook",
+        "link": "facebook",
+        "icon": "facebook"
+      },
+      {
+        "label": "[VI] Instagram",
+        "link": "instagram",
+        "icon": "instagram"
+      }
+    ],
+    "legal": "[VI] Designed with Vietnam's AI and health-data rules in mind.",
+    "disclaimer": "[VI] PulseMind is a research prototype. It is not a medical device and must not be used for patient care.",
+    "event": "[VI] BÁCH KHOA INNOVATION 2026",
+    "copyright": "[VI] © 2026 PulseMind team"
+  }
+}

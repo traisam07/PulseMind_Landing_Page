@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Brand: deep crimson on a light, clinical background. Not #F60D18. */
+@theme {
+  --color-crimson-900: #5c0f1c;
+  --color-crimson-800: #7a1426;
+  --color-crimson-700: #941b2f;
+  --color-crimson-600: #a82237;
+  --color-crimson-100: #f6e3e6;
+  --color-crimson-50: #fbf4f5;
+  --color-ink: #1c1b1f;
+  --color-muted: #4a4a55;
+  --color-line: #e3e1e4;
+  --color-paper: #ffffff;
+  --color-wash: #f7f6f5;
+
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-crimson-600);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}
+
+/* Review-only placeholder styling. Every [BRACKET] in the content file renders with this. */
+@layer components {
+  .ph-text {
+    @apply bg-yellow-200 text-yellow-950 font-mono rounded-sm;
+    outline: 1.5px dashed #a16207;
+    outline-offset: 1px;
+    padding: 0 0.25em;
+    font-size: 0.9em;
+  }
+  .ph-box {
+    @apply flex items-center justify-center bg-gray-200 text-gray-700 font-mono text-sm text-center p-3;
+    border: 2px dashed #9ca3af;
+  }
+}
